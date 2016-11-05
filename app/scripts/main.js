@@ -1,21 +1,19 @@
-var app = app || {};
+var HealthTracker = HealthTracker || {};
 
-$(function() {
+(function() {
 
   'use strict';
 
-  app.HealthTracker = {
-    Models: {},
-    Collections: {},
+  HealthTracker = {
     Views: {},
-    Routers: {},
     init: function () {
       console.log('Hello from Backbone!');
+      new HealthTracker.Views.AppView();
     }
   };
 
   $(document).ready(function () {
-    app.HealthTracker.init();
+    HealthTracker.init();
   });
 
 })();
